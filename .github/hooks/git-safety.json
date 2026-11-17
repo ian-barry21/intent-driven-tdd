@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "hooks": {
+    "preToolUse": [
+      {
+        "type": "command",
+        "command": "dotnet run .github/hooks/TddGuard.cs -- git-safety",
+        "timeoutSec": 30
+      }
+    ]
+  }
+}
